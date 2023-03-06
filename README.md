@@ -1,16 +1,12 @@
-# New Project
+# Challenge: Refactor the My Places App
 
-This project was created from the neue fische next template.
+The My Places app is working fine, but the code starts to "smell"...💩
 
-## Development
+There is a bunch of components drilling down the `isLarge` state to `PlaceImage` - which is the only component that really needs this information (together with `Header`, where the state gets changed).
 
-### CodeSandbox
+Please refactor the app to use React Context to pass the `isLarge` state directly to the components that need it!
 
-Select the "Browser" tab to view this project. If this project contains tests, select the "Tests" tab to check your progress.
-
-> 💡 Please note that Next.js support on CodeSandbox is not great.
-
-### Local development
+## Local development
 
 To run project commands locally, you need to install the dependencies using `npm i` first.
 
